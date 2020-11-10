@@ -1,0 +1,279 @@
+body{
+    margin: 0;
+    background: #eee2dc;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background: #123c69;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #ac3b61;
+    z-index: 1;
+ 
+  
+}
+nav .title {
+    display: flex;
+    align-items: center;
+}
+nav .title a {
+    color: #eee2dc;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    text-decoration: none;
+}
+nav .title h3{
+    color: #eee2dc;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 15px;
+    
+}
+
+nav .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    
+}
+nav .tags a{
+    color: #eee2dc;
+    margin-right: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+nav .tags a:hover{
+    color: #ac3b61;
+    font-weight: 800; 
+}
+#current {
+    color: #ac3b61;
+    font-weight: 800; 
+}
+header {
+    background: #ac3b61;
+    z-index: 0;
+}
+.slider {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 495px;
+    text-align: center;
+    border-bottom: 3px solid #ac3b61;
+}
+.slider .hidden {
+    display: none;
+}
+.slider.item {
+    text-align: center;
+}
+.slider .item img {
+    width: 100%;
+    object-fit: cover;
+    height: 495px;
+}
+.slider .item a{
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #eee2dc;
+    background:  #ac3b6169;
+    padding: 10px 30px;
+    font-size: 25px;
+    font-weight: 600; 
+}
+.slider .previous, .slider .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: #eee2dc;
+    font-size: 16px;
+    font-weight: 600;  
+    cursor: pointer;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+}
+.slider .previous {
+    left: 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.slider .previous:hover, .slider .next:hover {
+    background-color: #ac3b6169;
+}
+#about {
+    width: 100%;
+    text-align: center;
+    border-bottom:3px solid #ac3b61;
+    
+   
+}
+#about h1 {
+    text-transform: uppercase;
+    color: #123c69;
+    font-size: 25px;
+    font-weight: 400;
+}
+#about p{
+    text-align: justify;
+    margin: 0 200px 20px;
+    
+}
+footer {
+    background: #123c69;
+    text-align: center;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h3 {
+    color: #eee2dc;
+    font-size: 13px;
+    font-weight: 300;
+
+}
+#books, #music, #cinema {
+    text-align: center;
+    margin-top: -20px;
+}
+#books {
+    background: url('books.jpg');
+    background-size: 100%;
+}
+#music {
+    background: url('music.jpg');
+    background-size: 100%;
+}
+
+h1{
+    color:#eee2dc;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+h2{
+    margin-top: -5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+h3{
+    font-size: 13px;
+    font-weight: 300;
+    margin-right: 20px;
+}
+.filter {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    padding: 0 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter h3 {
+    color: black;
+    text-transform: lowercase;
+}
+.filter button {
+    height: 25px;
+    margin-right: 20px;
+    border-radius: 3px;
+    background-color: #ac3b618f;
+    color: #eee2dc;
+    border: none;
+    outline: none;
+    cursor:pointer;
+}
+.filter button:hover {
+    background-color: #ac3b61;
+  }
+  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+   
+}
+.box{
+    width: 350px;
+    background:#eee2dca2;
+    margin: 10px 50px 20px;
+    padding: 0 20px 10px;
+    display: none;
+}
+p{
+    text-align: justify;
+}
+q{
+    font-style: italic;
+}
+.show {
+    display: block;
+}
+
+@media(max-width:768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+       
+    }
+    nav .title h3, nav .tags {
+        display: none;
+    }
+    #about p {
+        padding: 0 20px 30px;
+        width: 90%;
+        margin: 0;
+    }
+}
+
+@media(max-width:425px) {
+   
+    nav {
+        display: flex;
+        justify-content: center;
+       
+    }
+ 
+    nav .title h3, nav .tags {
+        display: none;
+    }
+    
+  
+    header .slider .item a{
+        left: 32%;
+    }
+    #about p {
+        width: 85%;
+        padding: 0 20px 10px;
+        margin: 0;
+    }
+    .box {
+        width: 340px;
+        background:#eee2dcbd;
+
+    }
+    footer {
+    display: flex;
+    justify-content: center;
+    }
+    
+}

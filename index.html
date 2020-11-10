@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Favourites</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+       <nav>
+           <div class="title">
+           <a href="index.html">Favourites</a>
+           <h3>- электронная библиотека моих любимых книг и музыки</h3>
+           </div>
+          
+           <div class="tags"> 
+            <a href="books.html">Книги</a>
+            <a href="music.html">Музыка</a> 
+            <a class="about-link" onClick="scrollEl()">О проекте</a>
+            </div> 
+       </nav>
+    <header>
+        <div class="slider">
+            <div class="item">
+                <img src="./books.jpg">
+                <a href="books.html">Книги</a>
+            </div>
+            <div class="item hidden">
+                <img src="./music.jpg">
+                <a href="music.html">Музыка</a>
+            </div>
+            <a class="next" onClick="nextSlide()">&#10095;</a>
+            <a class="previous" onClick="previousSlide()">&#10094;</a>
+        </div>
+    </header>
+    
+    <div id="about">
+        <h1>О проекте</h1>
+        <p><strong>Favourites</strong> - это место, где я решила собрать книги и музыку, которые мне нравятся. Все, что вечно теряется в закладках и никогда не находится в нужный момент. Все, чем хочется поделиться.</p>
+        <p>Еще мне хотелось создать что-то хоть немного оригинальное, отражающее меня. Потренироваться в том, что я уже знаю, и научиться чему-то новому.</p>
+    </div>
+    
+    <footer>
+        <h3>Татьяна Бохан &copy; 2020</h3>
+    </footer>
+
+</body>
+</html>
